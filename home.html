@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <input type="text" placeholder="0" id="inputext" />
+            <button onclick="clr()">CL</button>
+            <button onclick="del()">DEL </button>
+            <!--  <button onclick="display('( )')">()</button>-->
+            <!--<button onclick="calculate(22)">22</button>-->
+            <!--<asp:Button runat="server" Text="Button"></asp:Button>-->
+            <!--<input id="Button1" type="10" value="10" />-->
+            <button onclick="calculate('%')">%</button>
+            <button onclick="calculate('/')">/</button>
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button onclick="calculate('+')">+</button>
+
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button onclick="calculate('*')">*</button>
+
+            <button onclick="calculate('1')">1</button>
+            <button onclick="calculate('2')">2</button>
+            <button onclick="calculate('3')">3</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('.')">.</button>
+
+            <button onclick="calculate('0')">0</button>
+
+            <!--<button onclick="display('=')">=</button>-->
+
+            <button class="equal" onclick="Result()" >=</button>
+
+            <script src="calculator.js"></script>
+
+
+        </div>
+
+    </div>
+    <!--<script>
+        let ouputScreen = document.getElementById("output-screen ");
+        function display(num)
+        {
+            ouputScreen.value += num;
+        }
+        function calculate() {
+            try {
+                ouputScreen.value = eval(ouputScreen.value);
+            }
+            catch(err)
+            {
+                alert("Inavalid")
+            }
+        }
+        function clear() {
+            ouputScreen.value = "";
+        }
+        function del() {
+            ouputScreen.value = ouputScreen.value.slice(0, -1);
+        }
+    </script>-->
+</body>
+</html>
